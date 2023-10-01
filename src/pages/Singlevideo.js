@@ -8,6 +8,7 @@ import videoCard from '../assets/video-card.png';
 import whatsApp from '../assets/whatsapp.svg';
 import telegram from '../assets/telegram.svg';
 import faceBook from '../assets/facebook.svg';
+import copy from '../assets/copy.svg';
 import './videos.css';
 
 const Singlevideo = () => {
@@ -41,24 +42,27 @@ const Singlevideo = () => {
           </div>
 
           <div className='input-box diff'>
-            <input type='text' placeholder='https://www.helpmeout/Untitled_Video_20232509'/>
-            <button className='btn-new'>Copy URL</button>
+            <input type='text' placeholder='https://www.helpmeout/Untitled_Vid_209'/>
+            <div className='btn-new'>
+              <img src={ copy } alt='copy'/>
+              Copy URL
+            </div>
           </div>
         </div>
         <div className='social-box'>
           <p className='title'>Share your video</p>
           <div className='socials'>
-            <div>
+            <div className='wrap'>
               <img src={ faceBook } alt='socail icon'/>
               <p>Facebook</p>
             </div>
 
-            <div>
+            <div className='wrap'>
               <img src={ whatsApp } alt='socail icon'/>
               <p>WhatsApp</p>
             </div>
 
-            <div>
+            <div className='wrap'>
               <img src={ telegram } alt='socail icon'/>
               <p>Telegram</p>
             </div>

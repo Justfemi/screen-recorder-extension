@@ -188,6 +188,19 @@ hr {
   flex-wrap: wrap;
 }
 
+.name {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name h3 {
+  font-family: 'Sora', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .container .top h5 {
   font-family: 'Sora', sans-serif;
   font-size: 24px;
@@ -240,25 +253,32 @@ hr {
   background: #FAFAFA;
 }
 
-.input-bag .btn {
-  background: transparent;
+.input-bag .btn-new {
   border: .5px solid #929292;
-  width: 150px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   right: 8px;
-  top: -10px;
-  color: #000;
+  top: -25px;
+  padding: 14px 24px;
+}
+
+.diff div {
+  color: #120B48;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0px;
+  background: transparent;
+}
+
+.btn-new img {
+  margin-right: 10px;
 }
 
 .input-bag .send {
   background-color: #605C84;
   border: none;
-  color: #fff;
-  width: 70px;
+  color: #f9f9ff;
+  cursor: pointer;
 }
 
 .social-box {
@@ -276,17 +296,17 @@ hr {
 
 .socials {
   display: flex;
-  justify-content: space-between;
-  width: 450px;
+  justify-content: space-around;
+  width: 480px;
   flex-wrap: wrap;
 }
 
-.socials div {
+.socials .wrap, .special {
   display: flex;
   justify-content: center;
   align-items: center;
   border: .5px solid #0A0628;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 6px;
 }
 
@@ -423,6 +443,35 @@ hr {
   padding: 28px 0;
 }
 
+.account div h2 {
+  color: #141414;
+  font-family: 'Sora', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.account div h3 {
+  color: #7E7E7E;
+  font-family: 'Sora', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.account div h3 a {
+  color: #120B48;
+}
+
+.btn-new {
+  padding: 16px 32px;
+  border-radius: 8px;
+  background: #120B48;
+  color: #f9f9ff;
+  margin: 30px 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .vline {
   border-left: 3px solid rgba(182, 179, 198, 0.5);
   height: 1000px;
@@ -430,6 +479,23 @@ hr {
 
 .account div {
   width: 700px;
-  border: solid red;
   margin: 50px auto;
+}
+
+.wide {
+  width: 100%;
+}
+
+.special {
+  margin: 0 3px 0 0;
+}
+
+.special p {
+  margin: 0 10px 0 0;
+}
+
+@media screen and (max-width: 340px) {
+  .test {
+    display: block;
+  }
 }

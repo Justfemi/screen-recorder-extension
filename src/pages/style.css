@@ -309,3 +309,7 @@ section .box-container .card .top p {
     object-fit: cover;
   }
 }
+
+.down {
+  margin-top: 25px;
+}

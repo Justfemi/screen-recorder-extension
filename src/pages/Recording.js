@@ -6,6 +6,7 @@ import editBtn from '../assets/edit.png';
 import whatsApp from '../assets/whatsapp.svg';
 import telegram from '../assets/telegram.svg';
 import faceBook from '../assets/facebook.svg';
+import copy from '../assets/copy.svg';
 import Footer from '../components/Footer/Footer';
 import './videos.css';
 import './style.css';
@@ -36,31 +37,38 @@ const Recording = () => {
               <h3>Untitled_Video_20232509</h3>
               <img src={editBtn} alt='edit-btn' />
             </div>
-            <div className='input-box new'>
-              <input type='email' placeholder='enter email of receiver'/>
-              <button className='btn send'>Send</button>
-            </div>
 
             <h2>Video URL </h2>
-            <div className='input-box diff'>
-              <input type='text' placeholder='https://www.helpmeout/Untitled_Video_20232509'/>
-              <button className='btn'>Copy URL</button>
+
+            <div className='input-bag'>
+              <div className='input-box new'>
+                <input type='email' placeholder='enter email of receiver'/>
+                <button className='btn-new send'>Send</button>
+              </div>
+
+              <div className='input-box diff down'>
+                <input type='text' placeholder='https://www.helpmeout/Untitled_Vid_209'/>
+                <div className='btn-new'>
+                  <img src={ copy } alt='copy'/>
+                  Copy URL
+                </div>
+              </div>
             </div>
 
             <div className='social-box'>
               <p className='title'>Share your video</p>
-              <div className='socials'>
-                <div>
+              <div className='socials wide'>
+                <div className='special'>
                   <img src={ faceBook } alt='socail icon'/>
                   <p>Facebook</p>
                 </div>
 
-                <div>
+                <div className='special'>
                   <img src={ whatsApp } alt='socail icon'/>
                   <p>WhatsApp</p>
                 </div>
 
-                <div>
+                <div className='special'>
                   <img src={ telegram } alt='socail icon'/>
                   <p>Telegram</p>
                 </div>
@@ -116,10 +124,10 @@ const Recording = () => {
           <h2>To ensure the availability and privacy of your video, 
             we recommend saving it to your account.</h2>
           <button className='btn-new'>Save Video</button>
-          <h2>
+          <h3>
             Don’t have an account? 
             <Link to='/signup'> Create account </Link>
-          </h2>
+          </h3>
         </div>
       </section>
       <Footer />
